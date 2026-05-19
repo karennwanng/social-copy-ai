@@ -15,7 +15,13 @@ app.post('/gerar', async (req, res) => {
     try {
         const completion = await groq.chat.completions.create({
             model: 'llama-3.3-70b-versatile',
-            messages: [{ role: 'user', content: prompt }]
+            messages: [
+    {
+        role: 'system',
+        content: 'Você é um especialista em marketing digital e criação de conteúdo para redes sociais. Crie legendas criativas, envolventes e adequadas para cada plataforma. Use emojis relevantes e hashtags estratégicas.'
+    },
+    { role: 'user', content: prompt }
+]
         });
 
         const text = completion.choices[0].message.content;
