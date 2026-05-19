@@ -38,8 +38,8 @@ h1 {
 
 main {
     text-align: center;
-    padding: 10px;
-    margin: 60px auto;
+    padding: 50px 20px;
+    margin: 100px auto;
     max-width: 600px;
 }
 
@@ -51,23 +51,6 @@ label {
     display: block;
     margin-top: 20px;
     margin-bottom: 8px;
-}
-
-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: var(--cor-do-botao);
-    color: var(--texto-principal);
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    
-    background-color: var(--cor-destaque-hover);
 }
 
 #descricao {
@@ -100,4 +83,59 @@ button:hover {
     color: var(--texto-secundario);
 }
 
+#botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+#btn-gerar {
+    flex: 1;
+    margin-top: 0;
+    padding: 12px 20px;
+    background-color: var(--cor-do-botao);
+    color: var(--texto-principal);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size:16px;
+    transition: background-color 0.3s ease;
+}
+
+#btn-gerar:hover {
+    background-color: var(--cor-destaque-hover);
+}
+
+#btn-limpar {
+    flex: 1;
+    margin-top: 0;
+    padding: 12px 20px;
+    background-color: transparent;
+    border: 1px solid var(--cor-do-botao);
+    color: var(--texto-secundario);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#btn-limpar:hover {
+    background-color: var(--fundo-card);
+    color: var(--texto-principal);
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 65px auto;
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    #descricao {
+        height: 100px;
+    }
+}
 
