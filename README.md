@@ -5,7 +5,7 @@
 ![preview do projeto](assets/img/preview.png)
 
 ## 🚀 Demo
-[Link do projeto](https://seu-usuario.github.io/gerador-legenda)
+[Link do projeto](https://karennwanng.github.io/social-copy-ai/)
 
 > ⚠️ O servidor pode demorar até 50 segundos na primeira requisição por estar no plano gratuito do Render.
 
