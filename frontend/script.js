@@ -19,7 +19,7 @@ async function gerarLegenda() {
         const prompt = `Crie uma legenda para ${redeSocial} com tom ${tom} sobre: ${textoUsuario}`;
 
         // 5. JS chama o servidor e aguarda
-        const response = await fetch("http://127.0.0.1:3000/gerar", {
+        const response = await fetch("https://social-copy-ai.onrender.com/gerar", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ prompt: prompt })
