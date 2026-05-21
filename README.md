@@ -7,6 +7,8 @@
 ## 🚀 Demo
 [Link do projeto](https://seu-usuario.github.io/gerador-legenda)
 
+> ⚠️ O servidor pode demorar até 50 segundos na primeira requisição por estar no plano gratuito do Render.
+
 ## 💻 Tecnologias
 - HTML, CSS e JavaScript
 - Node.js
