@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gerador de legendas para redes sociais com IA">
     <title>Gerador de legenda com IA</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo-roxo.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+        <!-- Botão para alternar o tema -->
+        <button id="btn-tema">🔵 Tema Azul</button>
+
     <main>
+
         <h1>Gerador de legenda com IA</h1>
         <p>Descreva sua ideia que a IA vai ajudar a gerar legendas e posts para suas redes sociais</p>
 
@@ -38,11 +46,17 @@
         </section>
         
         <div id="botoes">
-            <button id="btn-gerar" onclick="gerarLegenda()">Gerar</button>
-            <button id="btn-limpar" onclick="limpar()">Limpar</button>
+            <button id="btn-gerar">Gerar</button>
+            <button id="btn-limpar">Limpar</button>
         </div>
 
         <div id="resultado">
+            <div id="resultado-header">
+                <span id="resultado-titulo">Legenda gerada</span>
+                <button id="btn-copiar"><i class="fa-regular fa-copy"></i>
+                <span>Copiar</span>
+            </button>
+            </div>
             <p id="texto-gerado"></p>
         </div>
 
@@ -50,5 +64,10 @@
 
     <script src="script.js"></script>
 
+    <footer>
+        Desenvolvido por K.W 
+        <a href="https://github.com/karennwanng" target="_blank" aria-label="Github"><img src="../assets/img/github.png" alt="GitHub"></a>
+    </footer>
+    
 </body>
 </html>

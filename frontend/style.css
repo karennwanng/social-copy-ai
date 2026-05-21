@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* primeiro vem o reset global */
 * {
     margin: 0;
@@ -6,6 +7,7 @@
 }
 
 /* root = variáveis de cores */
+/* Tema roxo*/
 :root {
     --fundo: #0f0f0f;
     --fundo-card: #1a1a2e;
@@ -14,9 +16,10 @@
     --cor-de-destaque: #7c3aed;
     --cor-destaque-hover: #9d5ff5;
     --cor-do-botao: #7c3aed;
+    --cor-fundo-footer: #141414;
 } 
 
-/*:root {
+:root.tema-azul {
     --fundo: #0a0e1a;
     --fundo-card: #111827;
     --texto-principal: #e2e8f0;
@@ -24,12 +27,16 @@
     --cor-de-destaque: #3b82f6;
     --cor-destaque-hover: #60a5fa;
     --cor-do-botao: #3b82f6;
-} */
+    --cor-fundo-footer: #0d1117;
+} 
 
 /* elementos globais body, h1, p */
 body {
     background-color: var(--fundo);
     color: var(--texto-principal);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -37,6 +44,7 @@ h1 {
 }
 
 main {
+    flex: 1;
     text-align: center;
     padding: 50px 20px;
     margin: 100px auto;
@@ -61,12 +69,14 @@ label {
     padding: 12px;
     height: 120px;
     border-radius: 15px;
+    border: 1px solid var(--cor-de-destaque);
 }
 
 #redes-sociais, #tons {
     width: 100%;
     padding: 5px;
     border-radius: 10px;
+    border: 1px solid var(--cor-de-destaque);
     background-color: var(--fundo);
     color: var(--texto-principal);
 }
@@ -80,7 +90,7 @@ label {
 }
 
 #texto-gerado {
-    color: var(--texto-secundario);
+    color: var(--texto-principal);
 }
 
 #botoes {
@@ -93,17 +103,18 @@ label {
     flex: 1;
     margin-top: 0;
     padding: 12px 20px;
-    background-color: var(--cor-do-botao);
+    background-color: transparent;
+    border: 1px solid var(--cor-do-botao);
     color: var(--texto-principal);
-    cursor: pointer;
-    border: none;
     border-radius: 10px;
-    font-size:16px;
+    cursor: pointer;
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
 #btn-gerar:hover {
     background-color: var(--cor-destaque-hover);
+    color: var(--texto-principal);
 }
 
 #btn-limpar {
@@ -112,7 +123,7 @@ label {
     padding: 12px 20px;
     background-color: transparent;
     border: 1px solid var(--cor-do-botao);
-    color: var(--texto-secundario);
+    color: var(--texto-principal);
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
@@ -120,8 +131,66 @@ label {
 }
 
 #btn-limpar:hover {
-    background-color: var(--fundo-card);
+    background-color: var(--cor-destaque-hover);
     color: var(--texto-principal);
+}
+
+#btn-copiar {
+    margin-top: 0;
+    padding: 4px 10px ;
+    background-color: transparent;
+    border: 1px solid var(--cor-do-botao);
+    color: var(--texto-secundario);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+}
+
+#btn-copiar:hover {
+    background-color: var(--cor-destaque-hover);
+    color: var(--texto-principal);
+}
+
+#resultado-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+#btn-tema {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    padding: 6px 12px;
+    background-color: transparent;
+    border: 1px solid var(--cor-do-botao);
+    color: var(--texto-principal);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid var(--cor-de-destaque);
+    background-color: var(--cor-fundo-footer);
+    padding: 12px;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+footer:hover {
+    opacity: 1;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 @media (max-width: 600px) {
@@ -138,4 +207,3 @@ label {
         height: 100px;
     }
 }
-
