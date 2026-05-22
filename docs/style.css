@@ -213,6 +213,7 @@ img {
 
     #btn-tema {
         position: static;
+        display: block;
         top: auto;
         right: auto;
         font-size: 11px;
