@@ -2,7 +2,7 @@
 
 > Gere legendas para redes sociais usando inteligência artificial
 
-![preview do projeto](assets/img/preview.png)
+![preview do projeto](docs/assets/img/Legenda.png)
 
 ## 🚀 Demo
 [Link do projeto](https://karennwanng.github.io/social-copy-ai/)
