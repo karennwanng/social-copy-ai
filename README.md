@@ -5,7 +5,7 @@
 ![preview do projeto](docs/assets/img/Legenda.png)
 
 ## 🚀 Demo
-[Link do projeto](https://karennwanng.github.io/social-copy-ai/)
+https://karennwanng.github.io/social-copy-ai/
 
 > ⚠️ O servidor pode demorar até 50 segundos na primeira requisição por estar no plano gratuito do Render.
 

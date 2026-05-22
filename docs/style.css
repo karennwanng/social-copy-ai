@@ -206,4 +206,11 @@ img {
     #descricao {
         height: 100px;
     }
+
+    #btn-tema {
+        top: 8px;
+        right: 8px;
+        font-size: 11px;
+        padding: 4px 8px;
+    }
 }
