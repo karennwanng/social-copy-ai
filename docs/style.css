@@ -195,12 +195,16 @@ img {
 
 @media (max-width: 600px) {
     main {
-        margin: 0 auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
         padding: 80px 16px 16px 16px;
     }
 
     h1 {
         font-size: 1.6rem;
+        margin-top: 50px;
     }
 
     #descricao {
@@ -208,10 +212,13 @@ img {
     }
 
     #btn-tema {
-        position: fixed;
-        top: 8px;
-        right: 8px;
+        position: static;
+        top: auto;
+        right: auto;
         font-size: 11px;
-        padding: 4px 8px;
+        padding: 10px 10px;
+        margin-bottom: 16px;
+        width: fit-content;
+        margin-left: auto;
     }
 }
