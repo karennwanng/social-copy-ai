@@ -197,6 +197,7 @@ img {
     main {
         margin: 65px auto;
         padding: 16px;
+        padding-top: 50px;
     }
 
     h1 {
@@ -208,6 +209,7 @@ img {
     }
 
     #btn-tema {
+        position: fixed;
         top: 8px;
         right: 8px;
         font-size: 11px;
